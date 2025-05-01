@@ -13,5 +13,7 @@ This project is a Product Recommendation System built using Django and Django RE
 3. CRUD API's to handles operations like create, read , update , delete.
 4. Created an API that accepts product ids and returns the recommendations.
 5. Created a dashboard to see the frequently bought products ( Brownie points)
+http://127.0.0.1:8000/api/orders/dashboard/frequently-bought-together/
+
 
 
