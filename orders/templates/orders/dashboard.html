@@ -1,0 +1,35 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Bought Together</title>
+</head>
+<body>
+    <h1>Frequently Bought Together Products</h1>
+
+    {% if frequent_pairs %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Product 1</th>
+                    <th>Product 2</th>
+                    <th>Frequency</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for pair in frequent_pairs %}
+                    <tr>
+                        <td>{{ pair.product1.name }}</td>
+                        <td>{{ pair.product2.name }}</td>
+                        <td>{{ pair.count }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No frequently bought pairs found.</p>
+    {% endif %}
+</body>
+</html>
