@@ -3,9 +3,9 @@ This project is a Product Recommendation System built using Django and Django RE
 
 # Assumptions 
 1. Frequently bought together is based on orders containing multiple products.
-2. Recommendations are generated using collaborative filtering.
+2. Recommendations of products are generated using collaborative filtering.
 3. Orders model or table has Many-to-Many relation, as one order can have multiple products.
-4. Using the ModelViewSet class instead of manually defining the CRUD APIS.
+4. Manually defined all the CRUD apis for products and orders.
 
 # Development
 1. Created models for products and orders
